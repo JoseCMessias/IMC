@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+    --primary-color: rgb(19, 71, 98);
+    --primary-color2: rgb(6, 46, 68);
+    --primary-color3: rgb(15, 167, 23);
+    --primary-color4: rgb(206, 45, 45);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: "Open sans" sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5; /*altura da linha*/
+}
+
+.container {
+    max-width: 640px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(222, 226, 223);
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+
+form input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    margin-top: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    transition: 0.1s;
+}
+
+form button:hover {
+    background-color: var(--primary-color2);
+}
+
+form button:active {
+    background-color: var(--primary-color4);
+}
+
+/*IMC*/
+
+.container h1{
+    cursor:context-menu;
+}
+
+.textIMC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.textIMC p {
+    line-height: 0.8;
+    font-size: 20px;
+    transition: 0.1s;
+    cursor:context-menu;
+}
+
+.textIMC p:hover {
+    color: var(--primary-color3);
+}
+
+.textIMC h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 0.8;
+    transition: 0.1s;
+    cursor:context-menu;
+}
+
+.textIMC h2:hover {
+    color: var(--primary-color3);
+}
+
+.paragrafo-resultado, .bad{
+    background-color: rgb(84, 220, 91);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bad{
+    background-color: var(--primary-color4);
+}
