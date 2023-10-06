@@ -112,3 +112,13 @@ form button:active {
 .bad{
     background-color: var(--primary-color4);
 }
+
+.Pgreen{
+    color: rgb(43, 140, 2);
+    font-weight: bold;
+}
+
+.Vred{
+    color: rgb(197, 32, 17);
+    font-weight: bold;
+}
